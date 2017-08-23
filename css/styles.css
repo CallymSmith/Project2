@@ -1,0 +1,217 @@
+/*****PAGE STYLING*****/
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+/*****NAV*****/
+
+.main-nav {
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    color:#000000;
+    margin: auto;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+.main-nav li{
+    margin: 10px 0 10px 0;
+}
+
+
+/*****INTRODUCTION*****/
+
+.introduction img{
+    max-width: 80%;
+}
+
+.introduction {
+    margin: 50px 0 100px 0;
+    text-align: center;
+}
+
+
+/*****BODY*****/
+
+.main-body {
+    list-style-type: none;
+    text-align: center;
+}
+
+.main-body li img {
+    list-style-type: none;
+    max-width: 80%;
+}
+
+body h1 {
+    text-align: center;
+}
+
+body {
+    position: relative;
+}
+/*****FOOTER*****/
+
+footer {
+    display: inline;
+}
+
+
+/*****MISC CLASSES*****/
+
+
+.contact {
+    text-align: center;
+    margin: 100px 10px 80px 10px;
+}
+
+.phone {
+    font-size: 100%;
+}
+
+.email {
+    font-size: 100%;
+}
+
+.name {
+    display: inline;
+    margin: 10px 0 0 0;
+}
+
+.top {
+    display: inline;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.top a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*****MEDIA QUERIES*****/
+
+/*****Tablet*****/
+
+@media (min-width: 768px){
+    
+    .main-body {
+        text-align: center;
+    }
+    
+    body {
+        background-color:#cccccc;
+    }
+    
+    .introduction {
+        margin: 0 0 250px 0;
+    }
+    .introduction img {
+        float: right;
+        margin: 0 40px 50px 20px;
+    }
+    
+    .introduction p {
+        max-width: 50%;
+        padding: 0 0 0 50px;
+        font-size: 25px;
+    }
+ 
+    .navhome {
+        display: inline-block;
+        padding: 0 10px 0 0;
+    }
+    
+    .navportfolio {
+       display: inline-block; 
+       padding: 0 10px 0 10px;
+    }
+    
+    .navcontact {
+        display: inline-block;
+        padding: 0 0 0 10px;
+    }
+
+    .main-nav {
+        text-align: center;
+    }
+    
+    .main-body li {
+        display: inline-block;
+        width: 400px;
+        height: 150px;
+        margin: 0 0 200px 0;
+    }
+    
+
+    /*******************************************************************
+   
+    .Portfolio {
+        display: inline;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .MarketingPage {
+        display: inline;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .SearchPage {
+        display: inline;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .TravelApp {
+        display: inline;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .MapofFavorite {
+        display: inline;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .PhotoGallery {
+        display: inline;
+        height: 50px;
+        width: 100px;
+    }
+    
+    .Calculator {
+        display: inline;
+        height: 50px;
+        width: 100px;
+    }
+    *****************************************************************/
+}
+
+/*****Tablet*****/
+
+@media (min-width: 1023px){
+    body {
+        background: #FFFFFF;
+    }
+    
+    #myname {
+        float: left;
+    }
+
+}
