@@ -11,6 +11,17 @@ ul{
     padding: 0;
 }
 
+p {
+    padding: 0;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 400;
+}
 /*****NAV*****/
 
 .main-nav {
@@ -18,7 +29,6 @@ ul{
     text-decoration: none;
     list-style-type: none;
     color:#000000;
-    margin: auto;
 }
 
 .main-nav a {
@@ -56,6 +66,11 @@ p {
     font-size: 20px;
 }
 
+#intro{
+    font-weight: 300;
+}
+
+
 /*****BODY*****/
 #skills p, #skills ul, #skills li{
     list-style-type: none;
@@ -69,7 +84,7 @@ p {
 
 .main-body li img {
     list-style-type: none;
-    max-width: 80%;
+    max-width: 96%;
 }
 
 body h1 {
@@ -84,6 +99,13 @@ body {
 footer {
     display: flex;
     justify-content: space-between;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: grey;
+}
+
+#botnav {
+    display: none;
 }
 
 
@@ -93,6 +115,16 @@ footer {
 .contact {
     text-align: center;
     margin: 100px 10px 80px 10px;
+}
+
+.contactinfo {
+    width: 95%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.contactinfo p{
+    display: inline;
 }
 
 .phone {
@@ -136,19 +168,22 @@ footer {
     }
     
     .introduction {
-        margin: 0 0 250px 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 95%;
+        margin: 0 auto;
+
     }
     .introduction img {
-        float: right;
-        margin: 0 40px 50px 20px;
         max-height: 225px;
         max-width: 367px;
     }
     
     .introduction p {
-        max-width: 50%;
-        padding: 0 0 0 50px;
+        width: 95%;
+        margin: 0 auto;
         font-size: 20px;
+        text-align: left;
     }
  
     .navhome {
@@ -167,15 +202,28 @@ footer {
         padding: 0 0 0 10px;
     }
 
+
     .main-nav {
         text-align: center;
     }
-    
+
+    #botnav {
+        display: inline-block;
+    }
+
+    .bot-nav, .bot-nav li {
+        margin: 0;
+    }
+
+    #portfolio {
+        margin-top: 50px;
+    }
+
     .main-body li {
         display: inline-block;
-        width: 319px;
+        width: 49%;
         height: 150px;
-        margin: 0 0 200px 0;
+        margin: 20px 0 200px 0;
     }
     .main-body li p{
         font-size: 17px;
@@ -183,7 +231,7 @@ footer {
     
     
     .top a {
-        color: blue;
+        display: none;
     }
 
     /*******************************************************************
@@ -239,11 +287,33 @@ footer {
         background: #FFFFFF;
     }
     
-    #myname {
-        float: left;
+    #topnav {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
     }
-    /* .main-body{
-        padding: 
-    } */
+
+    #skills {
+        margin-top: 40px;
+    }
+
+    .main-body li {
+        margin-top: 15px;
+        width: 32%;
+    }
+
+    .introduction {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #botnav {
+        display: inline-block;
+    }
+
+    .bot-nav, .bot-nav li {
+        margin: 0;
+    }
 
 }
