@@ -7,6 +7,9 @@ body {
     background-color: #f2f2f2;
 }
 
+ul{
+    padding: 0;
+}
 
 /*****NAV*****/
 
@@ -30,6 +33,7 @@ body {
 
 h4{
     font-family: "Roboto";
+    font-size: 20px;
 }
 
 h1 {
@@ -48,6 +52,9 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-size: 20px;
+}
 
 /*****BODY*****/
 #skills p, #skills ul, #skills li{
@@ -75,7 +82,8 @@ body {
 /*****FOOTER*****/
 
 footer {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -96,16 +104,15 @@ footer {
 }
 
 .name {
-    display: inline;
-    margin: 10px 0 0 0;
+    display: inline-block;
+    padding: 0 0 15px 15px;
+    width: 125px;
 }
 
 .top {
-    display: inline;
+    display: inline-block;
+    padding: 0 15px 15px 0;
     text-align: right;
-    position: absolute;
-    right: 0;
-    bottom: 0;
 }
 
 .top a {
@@ -134,17 +141,20 @@ footer {
     .introduction img {
         float: right;
         margin: 0 40px 50px 20px;
+        max-height: 225px;
+        max-width: 367px;
     }
     
     .introduction p {
         max-width: 50%;
         padding: 0 0 0 50px;
-        font-size: 25px;
+        font-size: 20px;
     }
  
     .navhome {
         display: inline-block;
         padding: 0 10px 0 0;
+        
     }
     
     .navportfolio {
@@ -167,6 +177,10 @@ footer {
         height: 150px;
         margin: 0 0 200px 0;
     }
+    .main-body li p{
+        font-size: 17px;
+    }
+    
     
     .top a {
         color: blue;
