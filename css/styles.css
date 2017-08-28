@@ -163,7 +163,7 @@ footer {
     
     .main-body li {
         display: inline-block;
-        width: 400px;
+        width: 319px;
         height: 150px;
         margin: 0 0 200px 0;
     }
@@ -228,5 +228,8 @@ footer {
     #myname {
         float: left;
     }
+    /* .main-body{
+        padding: 
+    } */
 
 }
