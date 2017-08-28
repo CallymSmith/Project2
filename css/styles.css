@@ -1,18 +1,8 @@
 /*****PAGE STYLING*****/
 * {
   box-sizing: border-box;
-}
-
-body {
-    background-color: #f2f2f2;
-}
-
-ul{
-    padding: 0;
-}
-
-p {
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .light {
@@ -31,6 +21,16 @@ p {
     color:#000000;
 }
 
+h1 {
+    text-align: center;
+}
+
+#topnav h1 {
+    padding: 10px 0;
+    margin: 0;
+
+}
+
 .main-nav a {
     text-decoration: none;
     color: #000000;
@@ -39,6 +39,11 @@ p {
 
 .main-nav li{
     margin: 10px 0 10px 0;
+}
+
+.main-body li {
+    width: 90%;
+    margin: 0 auto;
 }
 
 h4{
@@ -58,20 +63,31 @@ h1 {
 }
 
 .introduction {
-    margin: 50px 0 100px 0;
+    margin: 50px 0 50px 0;
     text-align: center;
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 300;
 }
 
 #intro{
     font-weight: 300;
+    width: 90%;
+    margin: 0 auto 30px auto;
 }
 
 
 /*****BODY*****/
+
+#skills,
+#contacts {
+    margin: 40px 0;
+}
+
 #skills p, #skills ul, #skills li{
     list-style-type: none;
     text-align: center;
@@ -84,11 +100,9 @@ p {
 
 .main-body li img {
     list-style-type: none;
-    max-width: 96%;
-}
-
-body h1 {
-    text-align: center;
+    max-width: 95%;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 body {
@@ -99,9 +113,12 @@ body {
 footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: grey;
+    height: 60px;
+    padding: 0 20px;
 }
 
 #botnav {
@@ -136,15 +153,18 @@ footer {
 }
 
 .name {
-    display: inline-block;
-    padding: 0 0 15px 15px;
-    width: 125px;
+    font-weight: 500;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    /* padding: 0 0 15px 15px;
+    width: 125px; */
 }
 
 .top {
     display: inline-block;
-    padding: 0 15px 15px 0;
     text-align: right;
+    font-weight: 500;
 }
 
 .top a {
@@ -162,9 +182,20 @@ footer {
     .main-body {
         text-align: center;
     }
-    
-    body {
-        background-color:#cccccc;
+
+    #intro{
+        padding-right: 20px;
+    }
+
+    #topnav h1 {
+        padding: 10px 0;
+        margin: 0;
+        text-align: center;
+    }
+    #topnav .main-nav {
+        padding: 0 0 10px 0;
+        margin: 0;
+        text-align: center;        
     }
     
     .introduction {
@@ -224,13 +255,13 @@ footer {
         width: 49%;
         height: 150px;
         margin: 20px 0 200px 0;
+        vertical-align: bottom;
     }
     .main-body li p{
         font-size: 17px;
     }
-    
-    
-    .top a {
+
+    .top {
         display: none;
     }
 
@@ -289,9 +320,8 @@ footer {
     
     #topnav {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        width: 95%;
-        margin: 0 auto;
     }
 
     #skills {
@@ -299,7 +329,8 @@ footer {
     }
 
     .main-body li {
-        margin-top: 15px;
+        padding-top: 15px;
+
         width: 32%;
     }
 
